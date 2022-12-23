@@ -25,11 +25,10 @@ def residual_diff(new_list):
         if new_list[i] - int(new_list[i]) < min_resid:
             min_resid = new_list[i] - int(new_list[i])
     difference = max_resid - min_resid
-    list0 = [round(min_resid, 2), round(max_resid, 2), round(difference, 2)]
-    return list0
+    print(f"Min: {round(min_resid, 2):.2f}, Max: {round(max_resid, 2):.2f}, Difference: {round(difference, 2):.2f}.")
+    return difference
 
 
 array = list_creater(int(input("Введите число: ")))
-list0 = residual_diff(array)
 print(array)
-print(f"Min: {list0[0]}, Max: {list0[1]}, Difference: {list0[2]}.")
+residual_diff(array)
