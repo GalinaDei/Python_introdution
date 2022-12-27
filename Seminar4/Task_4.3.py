@@ -15,7 +15,7 @@ def non_repeating_elements(num):
         new_list.append(num1)
     print(new_list)
     list2 = Counter(new_list)
-    print(list2(value: 1))
+    print(list2.value(1))
 
     return list2
 
