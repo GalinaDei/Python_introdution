@@ -16,13 +16,11 @@ def polynomial_to_file(num):
     for i in range(num, 0, -1):
         k = random.randint(0, 10)
         s = random.choice("+-")
-        with open ("poly.txt", "a", encoding = "UTF-8") as my_f:
+        with open ("poly1.txt", "a", encoding = "UTF-8") as my_f:
             if k != 0:
                 my_f.write(f"{k}*x^{i} {s} ")
-            else:
-                break
     k = random.randint(0, 10)
-    with open("poly.txt", "a", encoding="UTF-8") as my_f:
+    with open("poly1.txt", "a", encoding="UTF-8") as my_f:
         my_f.write(f"{k} = 0\n")
     return
 
