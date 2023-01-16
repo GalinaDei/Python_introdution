@@ -7,14 +7,6 @@
 # 3*x^9 + 3*x^8 - 2*x^6 + 1*x^5 - 3*x^4 - 3*x^2 + 3 + 2*x^2 + 2*x^1 + 2 = 0   The contents of the files do not match!
 # 4*x^5 + 1*x^4 - 3*x^3 - 3 + 3*x^3 - 4*x^2 - 2*x^1 - 4 = 0
 # 4*x^2 - 4 + 3*x^6 - 4*x^5 - 4*x^4 - 4*x^3 + 3*x^2 - 2*x^1 - 0 = 0
-#
-# in
-#
-#
-#
-# out
-# The contents of the files do not match!
-
 def file_writer(file_name1, file_name2):
     with open(file_name1, 'r') as input0, open(file_name2, 'r') as input1:
         for line in input0:
