@@ -18,5 +18,6 @@ def vocabulary_create(list):
     for k, v in dict.items():
         if v:
             print('{}:{}'.format(k, v), end = ", ")
+    return dict
 
 vocabulary_create(list)
